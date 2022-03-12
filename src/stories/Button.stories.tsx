@@ -1,12 +1,16 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 import Button from '../components/Button'
-import { ButtonProps } from '../components/Button.types'
+import { ButtonProps } from '../types/Button'
 
 export default {
-    title: 'Contactless/Button',
+    title: 'Basics/Button',
     component: Button,
-    argTypes: {},
+    argTypes: {
+        color: {
+            control: { type: 'color' },
+        }
+    },
 } as Meta<typeof Button>
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />
@@ -15,5 +19,38 @@ export const Primary = Template.bind({})
 Primary.args = {
     disabled: false,
     secondary: false,
-    children: 'Hello'
+    children: 'Hello',
+    color: '#000000',
+    size: 'medium',
+    onClick: ()=>window.alert('Button Clicked!')
+} as ButtonProps
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+    disabled: false,
+    secondary: true,
+    children: 'Hello',
+    color: '#000000',
+    size: 'medium',
+    onClick: ()=>window.alert('Button Clicked!')
+} as ButtonProps
+
+export const DisabledPrimary = Template.bind({})
+DisabledPrimary.args = {
+    disabled: true,
+    secondary: false,
+    children: 'Hello',
+    color: '#000000',
+    size: 'medium',
+    onClick: ()=>window.alert('Button Clicked!')
+} as ButtonProps
+
+export const DisabledSecondary = Template.bind({})
+DisabledSecondary.args = {
+    disabled: true,
+    secondary: true,
+    children: 'Hello',
+    color: '#000000',
+    size: 'medium',
+    onClick: ()=>window.alert('Button Clicked!')
 } as ButtonProps
