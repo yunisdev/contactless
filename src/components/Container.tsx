@@ -5,6 +5,7 @@ import { ContainerProps } from '../types/Container'
 
 const StyledContainer = styled.div<ContainerProps>`
     padding: 10px 50px;
+	box-sizing: border-box;
 `
 
 const Container: FC<ContainerProps> = ({ children, ...props }) => {
