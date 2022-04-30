@@ -1,2 +1,4 @@
 import Button from './components/Button'
-export { Button }
+import Input from './components/Input'
+import ContactlessProvider from './components/ContactlessProvider'
+export { Button, Input, ContactlessProvider }

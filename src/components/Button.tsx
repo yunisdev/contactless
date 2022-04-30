@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
-import styled from 'styled-components'
-
+import styled, { useTheme } from 'styled-components'
+import { Theme } from '../theming'
 import { ButtonProps } from '../types/Button'
+import { useColor } from '../theming/index'
 
 const StyledButton = styled.button<ButtonProps>`
 	color: ${(props) => props.color};
@@ -37,7 +38,7 @@ const StyledButton = styled.button<ButtonProps>`
 	box-sizing: border-box;
 	transition: all 0.25s linear 0s;
 	font-weight: 500;
-	border-radius: 10px;
+	border-radius: 5px;
 	&:hover {
 		color: ${(props) => (props.secondary ? props.color : 'white')};
 		border-color: ${(props) =>
@@ -47,9 +48,11 @@ const StyledButton = styled.button<ButtonProps>`
 	}
 `
 
-const Button: FC<ButtonProps> = ({ children, color = 'black', ...props }) => {
+const Button: FC<ButtonProps> = ({ children, color, ...props }) => {
+	const [mainColor] = useColor([color])
+
 	return (
-		<StyledButton type="button" color={color} {...props}>
+		<StyledButton type="button" color={mainColor} {...props}>
 			{children}
 		</StyledButton>
 	)
