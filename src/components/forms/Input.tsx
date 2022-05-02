@@ -1,8 +1,8 @@
 import React, { FC, FormEvent, SyntheticEvent, useState } from 'react'
 import styled, { useTheme } from 'styled-components'
-import { Theme } from '../theming'
-import { InputProps } from '../types/Input'
-import { useColor } from '../theming/index'
+import { Theme } from '../../theming'
+import { InputProps } from '../../types/Input'
+import { useColor } from '../../theming/index'
 
 const StyledInput = styled.input<InputProps>`
 	& {

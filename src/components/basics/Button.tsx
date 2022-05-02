@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import styled, { useTheme } from 'styled-components'
-import { Theme } from '../theming'
-import { ButtonProps } from '../types/Button'
-import { useColor } from '../theming/index'
+import { Theme } from '../../theming'
+import { ButtonProps } from '../../types/Button'
+import { useColor } from '../../theming/index'
 
 const StyledButton = styled.button<ButtonProps>`
 	color: ${(props) => props.color};

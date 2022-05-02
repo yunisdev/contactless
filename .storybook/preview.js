@@ -1,4 +1,4 @@
-import ContactlessProvider from '../src/components/ContactlessProvider'
+import ContactlessProvider from '../src/components/misc/ContactlessProvider'
 import { createTheme } from '../src/theming'
 
 export const parameters = {

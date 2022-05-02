@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styled, { useTheme } from 'styled-components'
-import { Theme, useColor } from '../theming'
-import { SelectProps } from '../types/Select'
+import { Theme, useColor } from '../../theming'
+import { SelectProps } from '../../types/Select'
 
 const StyledSelect = styled.div<SelectProps>``
 

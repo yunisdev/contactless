@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
-import { BlockProps } from '../types/Block'
+import { BlockProps } from '../../types/Block'
 
 const StyledBlock = styled.div<BlockProps>`
 	width: calc(100% * ${(props) => props.size} / 12);

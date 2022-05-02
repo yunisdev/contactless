@@ -1,6 +1,6 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import Input from '../components/Input'
+import Input from '../components/forms/Input'
 import { InputProps } from '../types/Input'
 
 export default {
