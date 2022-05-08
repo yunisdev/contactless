@@ -1,5 +1,7 @@
-import { Theme } from '../theming/index';
+import { Theme } from '../theming/index'
+import { ReactChild } from 'react'
 
 export interface ContactlessProviderProps {
-    theme?: Theme
+	theme?: Theme
+	child?: ReactChild
 }
