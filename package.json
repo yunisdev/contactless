@@ -4,7 +4,7 @@
     "description": "",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
-    "types": "index.d.ts",
+    "types": "dist/index.d.ts",
     "scripts": {
         "build": "rollup -c",
         "start": "rollup -c --watch",
