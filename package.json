@@ -8,9 +8,7 @@
         "build": "rollup -c",
         "start": "rollup -c --watch",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook",
-        "test": "jest",
-        "test:watch": "jest --watch"
+        "build-storybook": "build-storybook"
     },
     "author": "Yunis Huseynzade",
     "license": "ISC",
