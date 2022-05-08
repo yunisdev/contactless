@@ -9,7 +9,8 @@
         "build": "rollup -c",
         "start": "rollup -c --watch",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+        "build-storybook": "build-storybook",
+        "publish": "npm run build && np"
     },
     "author": "Yunis Huseynzade",
     "license": "ISC",

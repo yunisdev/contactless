@@ -48,7 +48,7 @@ const StyledButton = styled.button<ButtonProps>`
 	}
 `
 
-const Button: FC<ButtonProps> = ({ children, color, ...props }) => {
+const Button: FC<ButtonProps> = ({ children, color = 'black', ...props }) => {
 	const [mainColor] = useColor([color])
 
 	return (
