@@ -13,7 +13,6 @@ docs
 .env.test.local
 .env.production.local
 .github
-demo/**/*
 .esdoc.json
 .vscode
 
@@ -23,10 +22,9 @@ yarn-error.log*
 
 # Development folders and files
 public
-src
+demo
 scripts
 config
 .travis.yml
 CHANGELOG.md
-README.md
 helper.py
