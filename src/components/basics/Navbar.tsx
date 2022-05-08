@@ -1,7 +1,7 @@
 import React, { FC, useRef, useState } from 'react'
 import styled, { css, useTheme } from 'styled-components'
 import { Theme, useColor } from '../../theming'
-import { NavbarProps } from '../../types/Navbar'
+import { NavbarProps, NavLinkProps } from '../../types/Navbar'
 import DefaultNavToggler from './DefaultNavToggler'
 
 const StyledNavbar = styled.div<NavbarProps>`
@@ -92,10 +92,6 @@ const NavItems = styled.ul`
 	}
 `
 
-export const NavItem = styled.li`
-	padding: 8px;
-`
-
 const NavToggler = styled.div`
 	@media (min-width: 768px) {
 		display: none;
@@ -133,6 +129,14 @@ const Navbar: FC<NavbarProps> = ({
 			</NavbarInner>
 		</StyledNavbar>
 	)
+}
+
+const StyledNavLink = styled.li`
+	padding: 8px;
+`
+
+export const NavLink: FC<NavLinkProps> = ({ children, to }) => {
+	return <StyledNavLink>{children}</StyledNavLink>
 }
 
 export default Navbar

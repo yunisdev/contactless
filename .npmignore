@@ -13,7 +13,7 @@ docs
 .env.test.local
 .env.production.local
 .github
-demo
+demo/**/*
 .esdoc.json
 .vscode
 
@@ -29,3 +29,4 @@ config
 .travis.yml
 CHANGELOG.md
 README.md
+helper.py
