@@ -29,7 +29,7 @@ const StyledNavbar = styled.div<NavbarProps>`
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: 0.5rem 1rem;
-
+	background: white;
 	@media (min-width: 768px) {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;

@@ -5,8 +5,10 @@ import {
 	ContactlessProvider,
 	Container,
 	Block,
-} from '../../src/.'
-import { createTheme } from '../../src/theming'
+	createTheme,
+	Grid,
+	GridItem,
+} from 'contactless'
 
 const App = () => {
 	const theme = createTheme({
@@ -17,14 +19,22 @@ const App = () => {
 
 	return (
 		<ContactlessProvider theme={theme}>
-			<Container>
-				<Block size={6}>
-					<Input />
-				</Block>
-				<Block size={3}>
-					<Input />
-				</Block>
-			</Container>
+			<Grid
+				style={{ minHeight: 200 }}
+				rows={'100px 1fr 1fr'}
+				columns={5}
+				gap="10px"
+			>
+				<GridItem x={3} y={2} width={2}>
+					<div
+						style={{
+							height: '100%',
+							width: '100%',
+							background: 'red',
+						}}
+					></div>
+				</GridItem>
+			</Grid>
 		</ContactlessProvider>
 	)
 }

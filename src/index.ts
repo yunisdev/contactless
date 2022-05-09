@@ -5,6 +5,8 @@ import Container from './components/layout/Container'
 import Block from './components/layout/Block'
 import Navbar, { NavLink } from './components/basics/Navbar'
 import { createTheme } from './theming'
+import Grid from './components/layout/Grid'
+import GridItem from './components/layout/GridItem'
 export {
 	Button,
 	Input,
@@ -14,4 +16,6 @@ export {
 	Navbar,
 	NavLink,
 	createTheme,
+	Grid,
+	GridItem,
 }
