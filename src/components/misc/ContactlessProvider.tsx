@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 		border: 0;
 		font-size: 100%;
 		vertical-align: baseline;
-		box-sizing:border-box;
+		box-sizing: border-box;
 		font-family: Open-Sans, Helvetica, Sans-Serif;
 	}
 	article, aside, details, figcaption, figure, 
@@ -48,7 +48,28 @@ const GlobalStyle = createGlobalStyle`
 		border-spacing: 0;
 	}
 	a {
-		text-decoration:none;
+		text-decoration: none;
+	}
+	p {
+		word-break: break-all;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	h3 {
+		font-size: 1.17em;
+	}
+	h4 {
+		font-size: 1em;
+	}
+	h5 {
+		font-size: 0.83em;
+	}
+	h6 {
+		font-size: 0.67em;
 	}
 `
 
