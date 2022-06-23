@@ -8,7 +8,7 @@ const StyledButton = styled.button<ButtonProps>`
 	color: ${(props) => props.color};
 	border: 2px solid
 		${(props) => (props.secondary ? 'transparent' : props.color)};
-	background: white;
+	background: transparent;
 	cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 	padding: ${(props) => {
 		switch (props.size) {

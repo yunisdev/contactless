@@ -56,8 +56,10 @@ export interface {__name__}Props extends HTMLAttributes<> {{
 with open(f"src/types/{__name__}.ts","w") as f:
     f.write(types)
 
-with open(f"src/stories/{__name__}.stories.tsx","w") as f:
-    f.write(sb)
+createStory = input('Create story?[y/n]: ')
+if createStory.lower() == 'y':
+	with open(f"src/stories/{__name__}.stories.tsx","w") as f:
+		f.write(sb)
 
 with open(f"src/components/{__category__.lower()}/{__name__}.tsx","w") as f:
     f.write(tsx)

@@ -21,7 +21,7 @@ const App = () => {
 		<ContactlessProvider theme={theme}>
 			<Grid
 				style={{ minHeight: 200 }}
-				rows={'100px 1fr 1fr'}
+				rows={3}
 				columns={5}
 				gap="10px"
 			>
